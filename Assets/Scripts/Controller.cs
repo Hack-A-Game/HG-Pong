@@ -48,7 +48,7 @@ public class Controller : MonoBehaviour
 
     public void OnLevelWasLoaded(int level)
     {
-        if (level == 1)
+        if (Application.loadedLevelName == "Game")
         {
             GameObject obj = GameObject.Find("wall_left");
             obj.AddComponent<PlayerController>();

@@ -12,7 +12,7 @@ public class PlayButton : MonoBehaviour
             .GetComponent<Controller>()
             .setMode(Controller.PlayMode.SINGLE);
 
-        Application.LoadLevel(1);
+        Application.LoadLevel("Game");
     }
 
     public void SetMultiMode()
@@ -21,6 +21,6 @@ public class PlayButton : MonoBehaviour
             .GetComponent<Controller>()
             .setMode(Controller.PlayMode.MULTI);
 
-        Application.LoadLevel(1);
+        Application.LoadLevel("Game");
     }
 }
